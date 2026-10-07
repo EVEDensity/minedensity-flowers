@@ -3,6 +3,7 @@
 从 [minedensity.top](https://minedensity.top/) 提取的花朵与花园场景，使用 Three.js 和 Vue 3。
 
 [在线演示](https://evedensity.github.io/minedensity-flowers/)
+![Uploading image.png…]()
 
 ## 功能
 
