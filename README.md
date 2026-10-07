@@ -1,5 +1,7 @@
 # 手绘花园 · Three.js + Vue
 
+[在线演示](https://evedensity.github.io/minedensity-flowers/) · [原网站](https://minedensity.top/) · [Apache-2.0](LICENSE)
+
 从个人网站独立提取的花朵与花园场景演示。保留花瓣展开、弯曲花茎、点击种花、向上拖动生长、草地阴影、分层灌木与蕨类。底层是 Three.js 几何体，使用手绘材质和轮廓线呈现插画风格。
 
 ## 运行
@@ -29,10 +31,16 @@ npm run preview
 
 ## 公开范围
 
-只提取程序生成的花朵和场景，并按作者要求保留天空中的 Density 装饰字样；不包含原站文章、截图、音乐、个人账号链接、邮箱、备案号、统计脚本、服务器配置、GitHub Actions 或旧 Git 历史。Density 字样会随源码公开，可在 `src/App.vue` 中替换。此目录没有初始化 Git，也没有上传。
+只提取程序生成的花朵和场景，并保留天空中的 Density 装饰字样；不包含原站文章、截图、音乐、个人联系账号、邮箱、备案号、统计脚本、服务器配置或原网站 Git 历史。手绘文字位于 `src/components/scene/LayerSky.vue`。本仓库包含独立的 GitHub Pages 部署工作流，不需要服务器密钥。
 
 视觉方向参考 makemepulse 2019 年新年网站；本演示未复制其图片或模型素材。参考不等于官方合作或授权。
 
-**发布前请选定许可证。** 本提取版未擅自为你的作品指定 MIT 等许可证；未声明许可证时，不能将“源码可见”当作允许任意再分发。第三方依赖仍遵循各自许可证。
+## 许可证
+
+原创代码采用 **Apache License 2.0**，见 [LICENSE](LICENSE) 和 [NOTICE](NOTICE)。第三方依赖遵循各自许可证。
+
+## GitHub Pages
+
+这是无需后端的静态应用，适合部署到 GitHub Pages。Vite 使用相对资源路径，支持仓库子路径。仓库 Settings → Pages → Source 选择 GitHub Actions 后，推送到 main 会自动构建并发布 `dist`。
 
 WebGL 不可用时会显示提示。页面隐藏时暂停绘制；高分屏像素比限制为 2。复杂场景在低端设备上仍可能需要进一步降低阴影分辨率或像素比。
