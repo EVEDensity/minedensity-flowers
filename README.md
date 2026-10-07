@@ -28,7 +28,6 @@ npm run build
 npm run preview
 ```
 
-GitHub Pages：在 Settings → Pages 中选择 GitHub Actions，推送到 main 后自动部署。
 
 ## 许可证
 
